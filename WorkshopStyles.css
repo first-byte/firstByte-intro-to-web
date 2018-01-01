@@ -1,0 +1,164 @@
+body{
+    margin: 0;
+    background-color: #f1f1f1;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+ul {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+li{
+    float: right;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover{
+    background-color: #111;
+}
+
+a{
+    color: #4c4ca6;
+}
+
+a:hover{
+    color: #000080;
+}
+
+.page-title{
+    float: left;
+}
+
+.page-title a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.page-title a:hover{
+    background-color: #111;
+}
+
+.page-header{
+    background-color: #f1f1f1;
+    padding: 50px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.column{
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    height: 300px;
+    text-align: center;
+}
+
+.column img{
+    width: 100%;
+    height: 80%;
+}
+
+img:hover {
+    box-shadow: 0 0 4px 3px black;
+}
+
+/* You could just create one column-item-# element,
+but this allows further customization and easier debugging,
+especially because we're doing a responsive mobile design */
+
+.project-1{
+    /* background-color: #bbb; */
+}
+
+.project-2{
+    /* background-color: #ccc; */
+}
+
+.project-3{
+    /* background-color: #aaa; */
+}
+
+.project-4{
+    /* background-color: #ccc; */
+    margin-bottom: 100px; /* adjust for footer height*/
+}
+
+.project-5{
+    /* background-color: #bbb; */
+    margin-bottom: 100px; /* adjust for footer height*/
+}
+
+.project-6{
+    /* background-color: #ccc; */
+    margin-bottom: 100px; /* adjust for footer height*/
+}
+
+/* May not need */
+.row: after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.footer {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-top: 1px solid gray;
+  background-color: black;
+  color: white;
+  text-align: center;
+}
+
+.footer a{
+    color: #6666b2;
+}
+
+.footer a:hover{
+    color: #4c4ca6;
+}
+
+/* Responsive layout, allows you to change styles
+when the screensize is smaller than 600px */
+
+@media (max-width: 600px) {
+    .page-header{
+        padding-top: 80px;
+    }
+    .column {
+        width: 100%;
+    }
+    .project-4{
+        margin-bottom: 0;
+    }
+    .project-5{
+        margin-bottom: 0;
+    }
+    .project-6{
+        margin-bottom: 110px; /* adjust for footer height */
+        /* background-color: #aaa; */
+    }
+}
