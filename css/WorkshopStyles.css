@@ -33,6 +33,7 @@ li a {
 
 li a:hover{
     background-color: #111;
+    color: white;
 }
 
 a{
@@ -84,6 +85,10 @@ img:hover {
     box-shadow: 0 0 4px 3px black;
 }
 
+img{
+    border-radius: 25px;
+}
+
 /* You could just create one column-item-# element,
 but this allows further customization and easier debugging,
 especially because we're doing a responsive mobile design */
@@ -115,6 +120,16 @@ especially because we're doing a responsive mobile design */
     margin-bottom: 100px; /* adjust for footer height*/
 }
 
+.project-details{
+    margin: auto;
+    width: 50%;
+}
+
+.project-image{
+    height: 100%;
+    width: 100%;
+}
+
 /* May not need */
 .row: after {
     content: "";
@@ -142,7 +157,7 @@ especially because we're doing a responsive mobile design */
 }
 
 /* Responsive layout, allows you to change styles
-when the screensize is smaller than 600px */
+when the screensize is changed */
 
 @media (max-width: 600px) {
     .page-header{
@@ -160,5 +175,13 @@ when the screensize is smaller than 600px */
     .project-6{
         margin-bottom: 110px; /* adjust for footer height */
         /* background-color: #aaa; */
+    }
+}
+
+@media (max-width: 900px) {
+    .project-details{
+        margin: auto;
+        width: 80%;
+        height: 100%;
     }
 }
