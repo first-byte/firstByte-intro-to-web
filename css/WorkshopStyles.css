@@ -176,12 +176,17 @@ when the screensize is changed */
         margin-bottom: 110px; /* adjust for footer height */
         /* background-color: #aaa; */
     }
+    .project-details{
+        margin: auto;
+        width: 80%;
+        height: 60%;
+    }
 }
 
 @media (max-width: 900px) {
     .project-details{
         margin: auto;
         width: 80%;
-        height: 100%;
+        height: 80%;
     }
 }
