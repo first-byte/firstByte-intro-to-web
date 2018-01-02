@@ -121,7 +121,6 @@ especially because we're doing a responsive mobile design */
 }
 
 .project-details{
-    background-color: #f1f1f1;
     margin: auto;
     width: 50%;
 }
@@ -178,7 +177,6 @@ when the screensize is changed */
         /* background-color: #aaa; */
     }
     .project-details{
-        background-color: #f1f1f1;
         margin: auto;
         width: 80%;
         height: 60%;
@@ -188,7 +186,6 @@ when the screensize is changed */
 
 @media (max-width: 900px) {
     .project-details{
-        background-color: #f1f1f1;
         margin: auto;
         width: 80%;
         height: 80%;
